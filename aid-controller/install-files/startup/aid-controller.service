@@ -1,0 +1,9 @@
+[Unit]
+Description=Advanced Issue Detection
+
+[Service]
+User=aid
+ExecStart=/usr/bin/python /opt/scripts/aid-controller/aid-controller.py
+
+[Install]
+WantedBy=multi-user.target
